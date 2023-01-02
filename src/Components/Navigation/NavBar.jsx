@@ -7,14 +7,14 @@ import WebNavMenu from "./WebNavMenu";
 export default function NavBar() {
   return (
     <nav>
-      <div className="nav-header ">
+      {/* <div className="nav-header ">
         <div className="nav-header-info max-container">
-          <p className="nav-header-text">✅ Active Looking For Work</p>
+          <p className="nav-header-text"></p>
           <div className="nav-header-social-cont">
             <SocialElements />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="nav-link-box max-container">
         <div className="nav-menu-box">
           <Logo />
@@ -22,7 +22,10 @@ export default function NavBar() {
           <MobileNavMenu />{" "}
         </div>
         <div className="nav-cta-cont">
-          <button className="cta-btn">View My Resume</button>
+          <div className="nav-header-social-cont">
+            <SocialElements />
+          </div>
+          <button className="cta-btn">Resume</button>
         </div>
       </div>
     </nav>

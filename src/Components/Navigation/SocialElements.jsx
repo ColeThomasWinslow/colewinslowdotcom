@@ -8,7 +8,7 @@ export default function SocialElements() {
   ];
   return (
     <div className="socials">
-      {Socials.map((social) => {
+      {/* {Socials.map((social) => {
         return (
           <a className="social-element" href={social.link} target="_blank">
             <img
@@ -18,7 +18,7 @@ export default function SocialElements() {
             />
           </a>
         );
-      })}
+      })} */}
     </div>
   );
 }

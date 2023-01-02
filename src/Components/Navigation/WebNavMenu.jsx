@@ -2,9 +2,10 @@ import React from "react";
 
 export default function WebNavMenu() {
   const NavLinks = [
-    { id: 1, title: "Home", icon: "", link: "/projects" },
-    { id: 2, title: "Projects", icon: "", link: "/projects" },
-    { id: 3, title: "About ", icon: "", link: "/projects" },
+    { id: 0, title: "Home", icon: "", link: "/home" },
+    { id: 1, title: "Skills", icon: "", link: "/projects" },
+    { id: 2, title: " Portfolio", icon: "", link: "/Portfolio" },
+    { id: 3, title: "About", icon: "", link: "/about" },
   ];
   return (
     <div className="web-nav-menu">

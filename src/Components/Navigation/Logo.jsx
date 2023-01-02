@@ -2,9 +2,8 @@ import React from "react";
 
 export default function Logo() {
   return (
-    <>
+    <a className="Logo" href="/">
       <svg
-        className="Logo"
         width="49"
         height="23"
         viewBox="0 0 49 23"
@@ -20,6 +19,6 @@ export default function Logo() {
           fill="#24335a"
         ></path>
       </svg>
-    </>
+    </a>
   );
 }
