@@ -1,11 +1,18 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 function Hero() {
   return (
     <div className="hero">
       <div className="hero-body">
         <h1 className="hero-title">
-          Hi, I'm <span>Cole Winslow</span>
+          Hi, I'm
+          <motion.span
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1, ease: "linear" }}
+            animate={{ opacity: 1 }}
+          >
+            Cole Winslow
+          </motion.span>
           <br />
           Welcome to my Website! <br />
         </h1>
@@ -28,7 +35,13 @@ function Hero() {
           </p>
         </div>{" "}
         <div className="hero-cta-box">
-          <a href="" className="hero-btn">
+          <motion.a
+            initial={{ x: "-100vw" }}
+            transition={{ duration: 1, stiffness: 300, ease: "linear" }}
+            animate={{ x: 1 }}
+            href="/"
+            className="hero-btn"
+          >
             <img
               data-src="https://doimages.nyc3.digitaloceanspaces.com/github-logo.svg"
               src="https://doimages.nyc3.digitaloceanspaces.com/github-logo.svg"
@@ -36,8 +49,14 @@ function Hero() {
               class="hero-btn-icon"
             ></img>{" "}
             View my Github
-          </a>
-          <a href="" className="hero-btn">
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, x: "100vw" }}
+            transition={{ duration: 1.5, stiffness: 300, ease: "linear" }}
+            animate={{ x: 1, opacity: 1 }}
+            href="/"
+            className="hero-btn"
+          >
             <svg
               class="hero-btn-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +73,7 @@ function Hero() {
               </g>
             </svg>{" "}
             Message me on linkedIn
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>

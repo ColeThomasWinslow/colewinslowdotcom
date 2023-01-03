@@ -1,13 +1,16 @@
-import React from "react";
+import { motion, useInView } from "framer-motion";
+import React, { useRef } from "react";
 
 export default function Projects() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   const ProjectList = [
     {
       id: 1,
       title: "IssuesMangerPro",
       tech: [{ id: 1, title: "React" }],
       coverImg: "",
-      description: "Bug Tracker and Project Manager",
+      description: "Project Manager and Bug Tracker",
       live: "",
       code: "https://github.com/colewinslow/IssuesManagerPro",
     },
@@ -16,7 +19,7 @@ export default function Projects() {
       title: "Roles.io",
       tech: [{ id: 1, title: "React" }],
       coverImg: "",
-      description: "Business Management System for Roles",
+      description: "Management System for Roles",
       live: "",
       code: "https://github.com/colewinslow/Roles.io",
     },
@@ -25,7 +28,7 @@ export default function Projects() {
       title: "PuzzleMyImage",
       tech: [{ id: 1, title: "React" }],
       coverImg: "",
-      description: "Puzzle Creation And E-commerce Shop",
+      description: "Puzzle Creation and Shop",
       live: "",
       code: "https://github.com/colewinslow/PuzzleMyImage",
     },
@@ -46,15 +49,23 @@ export default function Projects() {
         See what the power of coding I can do! Check out these full-stack
         business focused applications I've created below.
       </p>
-      <div className="project-container">
-        {ProjectList.map((project) => {
-          return (
-            <div className="project-card">
-              <h3>{project.title}</h3>
-              <p className="project-text">{project.description}</p>
-            </div>
-          );
-        })}
+      <div ref={ref} className="project-container">
+        {isInView &&
+          ProjectList.map((project) => {
+            return (
+              <motion.div
+                initial={{ opacity: 0, y: "100vh" }}
+                transition={{ stiffness: 100, delay: `0.${project.id}` }}
+                animate={{ opacity: 1, y: 0 }}
+                className="project-card"
+              >
+                <img src="/" className="project-img" alt={project.title} />
+                <p className="project-text">{project.description}</p>
+                <button>Live Website</button>
+                <button>Code Repository</button>
+              </motion.div>
+            );
+          })}
       </div>
     </div>
   );
