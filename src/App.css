@@ -348,16 +348,15 @@ nav {
   justify-content: space-evenly;
   flex-wrap: nowrap;
   margin: 32px auto;
-  animation: 40s Marquee 0s infinite normal none;
+  transition: all 0.1s;
+  animation: 30s Marquee 0s infinite normal none;
   width: calc(3584px);
 }
 
 .backend {
-  animation: 40s Marquee 0s infinite normal none;
-  transition: all 0.3s;
-  animation-direction: reverse;
   margin: 0px auto;
-  width: calc(3136px);
+  margin-left: 180px;
+  width: calc(3584px);
 }
 .slide {
   background: white;
