@@ -5,14 +5,7 @@ function Hero() {
     <div name="home" className="hero">
       <div className="hero-body">
         <h1 className="hero-title">
-          Hi, I'm
-          <motion.span
-            initial={{ opacity: 0 }}
-            transition={{ duration: 1, ease: "linear" }}
-            animate={{ opacity: 1 }}
-          >
-            Cole Winslow
-          </motion.span>
+          Hi, I'm Cole Winslow
           <br />
           Welcome to my Website! <br />
         </h1>
