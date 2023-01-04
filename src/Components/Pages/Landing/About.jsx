@@ -9,25 +9,17 @@ export default function About() {
       {isInView && (
         <>
           {" "}
-          <motion.div
-            initial={{ x: "-100vw" }}
-            transition={{ stiffness: 500, ease: "linear" }}
-            animate={{ x: 1 }}
-            exit={{ x: "-100vw" }}
-            className="about-section about-content"
-          >
+          <motion.div className="about-section about-content">
             <p></p>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: "100vw" }}
-            transition={{ stiffness: 500, ease: "linear" }}
-            animate={{ x: 1, opacity: 1 }}
-            className="about-section"
-          >
-            <h2 className="secondary-title">About Me</h2>
+          <motion.div className="about-section">
+            <h2 className="secondary-title">A Little More About Me</h2>
             <p className="about-text">
-              See what the power of coding I can do! Check out these full-stack
-              business focused applications I've created below.
+              Hey everyone i'm Cole! A full-stack developer based in Arizona. If
+              you're looking for someone with a passion for problem-solving,
+              communication and technology - I'm your guy! Im always trying to
+              grow my network, so even if you don't need my help as a programmer
+              feel free to reach out to start up a conversation!
             </p>
           </motion.div>
         </>

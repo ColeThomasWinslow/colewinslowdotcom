@@ -20,6 +20,7 @@ export default function WebNavMenu() {
             duration={500}
             className="nav-element"
             to={elm.link}
+            href={elm.link}
           >
             {elm.title}
           </Link>

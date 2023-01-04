@@ -29,7 +29,7 @@ export default function Skills() {
         {" "}
         <h2 className="secondary-title">Developer Skills</h2>
         <p className="skills-para">
-          HTML, CSS, Javascript, React, Typescript, SQL ect.{" "}
+          HTML, CSS, Javascript, React, Typescript, SQL{" "}
           <br className="nameBreak" />{" "}
           <svg
             width="19"

@@ -29,7 +29,7 @@ function Hero() {
             />
             . Take a look at what i've created below and feel free to reach out
             via LinkedIn or email me at
-            <a className="email-link" href="/">
+            <a className="email-link" href="mailto: colewinslow174@gmail.com">
               colewinslow174@gmail.com.
             </a>
           </p>
@@ -37,11 +37,12 @@ function Hero() {
         <div className="hero-cta-box">
           <>
             <motion.a
+              target="_blank"
               initial={{ x: "-100vw" }}
               transition={{ stiffness: 500, ease: "linear" }}
               animate={{ x: 1 }}
               exit={{ x: "-100vw" }}
-              href="/"
+              href="https://github.com/colewinslow"
               className="hero-btn"
             >
               <img
@@ -53,10 +54,11 @@ function Hero() {
               View my Github
             </motion.a>
             <motion.a
+              target="_blank"
               initial={{ opacity: 0, x: "100vw" }}
               transition={{ stiffness: 500, ease: "linear" }}
               animate={{ x: 1, opacity: 1 }}
-              href="/"
+              href="https://www.linkedin.com/in/cole-winslow/"
               className="hero-btn"
             >
               <svg

@@ -1,15 +1,15 @@
-import { motion, useInView } from "framer-motion";
-import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import React from "react";
 
 export default function Projects() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
   const ProjectList = [
     {
       id: 1,
       title: "IssuesMangerPro",
       tech: [{ id: 1, title: "React" }],
-      coverImg: "",
+      coverImg:
+        "https://cdn.dribbble.com/userupload/4047570/file/original-f4c098b972f07f621733deb4e2e4ee13.png?compress=1&resize=1504x1128",
+
       description: "Project Manager and Bug Tracker",
       live: "",
       code: "https://github.com/colewinslow/IssuesManagerPro",
@@ -18,7 +18,8 @@ export default function Projects() {
       id: 2,
       title: "Roles.io",
       tech: [{ id: 1, title: "React" }],
-      coverImg: "",
+      coverImg:
+        "https://cdn.dribbble.com/users/1937255/screenshots/17730757/media/5f1a23f81f104e47fcb06069b2456b21.png?compress=1&resize=1600x1200&vertical=top",
       description: "Management System for Roles",
       live: "",
       code: "https://github.com/colewinslow/Roles.io",
@@ -27,7 +28,8 @@ export default function Projects() {
       id: 3,
       title: "PuzzleMyImage",
       tech: [{ id: 1, title: "React" }],
-      coverImg: "",
+      coverImg:
+        "https://cdn.dribbble.com/userupload/3279154/file/original-d95ded83b926de6bd359ec2d12d13ec7.png?compress=1&resize=1504x1128",
       description: "Puzzle Creation and Shop",
       live: "",
       code: "https://github.com/colewinslow/PuzzleMyImage",
@@ -36,7 +38,8 @@ export default function Projects() {
       id: 4,
       title: "Talkz Messenger",
       tech: [{ id: 1, title: "React" }],
-      coverImg: "",
+      coverImg:
+        "https://cdn.dribbble.com/users/393931/screenshots/17594585/media/afb517c99764e5c75b2b125526a21ef6.png?compress=1&resize=1600x1200&vertical=top",
       description: "Chat Application",
       live: "",
       code: "https://github.com/colewinslow/TalkzMessenger",
@@ -49,23 +52,28 @@ export default function Projects() {
         See what the power of coding I can do! Check out these full-stack
         business focused applications I've created below.
       </p>
-      <div ref={ref} className="project-container">
-        {isInView &&
-          ProjectList.map((project) => {
-            return (
-              <motion.div
-                initial={{ opacity: 0, y: -1 }}
-                transition={{ stiffness: 100, delay: `0.${project.id}` }}
-                animate={{ opacity: 1, y: 0 }}
-                className="project-card"
-              >
-                <img src="/" className="project-img" alt={project.title} />
-                <p className="project-text">{project.description}</p>
-                <button>Live Website</button>
-                <button>Code Repository</button>
-              </motion.div>
-            );
-          })}
+      <div className="project-container">
+        {ProjectList.map((project) => {
+          return (
+            <motion.div
+              initial={{ opacity: 0, y: -1 }}
+              transition={{ stiffness: 100, delay: `0.${project.id}` }}
+              animate={{ opacity: 1, y: 0 }}
+              className="project-card"
+            >
+              <div className="img-cont">
+                <img
+                  src={project.coverImg}
+                  className="project-img"
+                  alt={project.title}
+                />
+              </div>
+              <p className="project-text">{project.description}</p>
+              <button className="card-btn">Live Website</button>
+              <button className="card-btn">Code Repository</button>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );
