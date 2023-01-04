@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import MobileNavMenu from "./MobileNavMenu";
 import SocialElements from "./SocialElements";
 import WebNavMenu from "./WebNavMenu";
-
+import Resume from "./ColeWinslowResume.pdf";
 export default function NavBar() {
   return (
     <nav>
@@ -26,8 +26,10 @@ export default function NavBar() {
           <div className="nav-header-social-cont">
             <SocialElements />
           </div>
-          <motion.button
-            whileHover={{ scale: 1.06 }}
+          <motion.a
+            href={Resume}
+            target="_blank"
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.95 }}
             className="cta-btn"
           >
@@ -54,7 +56,7 @@ export default function NavBar() {
                 stroke-linejoin="round"
               />
             </svg>
-          </motion.button>
+          </motion.a>
         </div>
       </div>
     </nav>

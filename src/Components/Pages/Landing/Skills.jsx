@@ -29,7 +29,7 @@ export default function Skills() {
         {" "}
         <h2 className="secondary-title">Developer Skills</h2>
         <p className="skills-para">
-          HTML, CSS, Javascript, React, Typescript, SQL{" "}
+          HTML, CSS, Javascript, Typescript, SQL
           <br className="nameBreak" />{" "}
           <svg
             width="19"
@@ -55,30 +55,32 @@ export default function Skills() {
           </svg>
           View all skills on my resume{" "}
         </p>{" "}
-        <div className="slider frontend">
-          {" "}
-          {FrontEndSkills.map(({ id }) => {
-            return (
-              <motion.div
-                key={id}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="slide"
-              ></motion.div>
-            );
-          })}
-        </div>
-        <div className="slider backend reverse ">
-          {BackEndSkills.map(({ id }) => {
-            return (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                key={id}
-                className="slide "
-              ></motion.div>
-            );
-          })}
+        <div className="slider-cont">
+          <div className="slider frontend">
+            {" "}
+            {FrontEndSkills.map(({ id }) => {
+              return (
+                <motion.div
+                  key={id}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="slide"
+                ></motion.div>
+              );
+            })}
+          </div>
+          <div className="slider backend reverse ">
+            {BackEndSkills.map(({ id }) => {
+              return (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  key={id}
+                  className="slide "
+                ></motion.div>
+              );
+            })}
+          </div>{" "}
         </div>
       </div>
       <div className="skills-bottom"></div>

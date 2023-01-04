@@ -50,7 +50,7 @@ export default function Projects() {
       <h2 className="secondary-title">Programming Portfolio</h2>
       <p className="hero-text">
         See what the power of coding I can do! Check out these full-stack
-        business focused applications I've created below.
+        applications I've created below.
       </p>
       <div className="project-container">
         {ProjectList.map((project) => {
