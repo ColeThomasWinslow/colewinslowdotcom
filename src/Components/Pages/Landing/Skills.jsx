@@ -1,23 +1,58 @@
-import { motion } from "framer-motion";
 import React from "react";
-
+import Marquee from "react-fast-marquee";
 export default function Skills() {
   const FrontEndSkills = [
-    { id: 1 },
-    { id: 2 },
-    { id: 3 },
-    { id: 4 },
-    { id: 5 },
-    { id: 6 },
-    { id: 7 },
+    {
+      id: 1,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+    },
+    {
+      id: 2,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+    },
+    {
+      id: 3,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+    },
+    {
+      id: 4,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+    },
+    {
+      id: 5,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+    },
+    {
+      id: 6,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+    },
+    {
+      id: 7,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+    },
   ];
   const BackEndSkills = [
-    { id: 8 },
-    { id: 9 },
-    { id: 10 },
-    { id: 11 },
-    { id: 12 },
-    { id: 13 },
+    { id: 8, img: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" },
+    {
+      id: 9,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+    },
+    {
+      id: 10,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+    },
+    {
+      id: 11,
+      img: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
+    },
+    {
+      id: 12,
+      img: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
+    },
+    {
+      id: 13,
+      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+    },
     { id: 14 },
   ];
 
@@ -55,33 +90,25 @@ export default function Skills() {
           </svg>
           View all skills on my resume{" "}
         </p>{" "}
-        <div className="slider-cont">
-          <div className="slider frontend">
-            {" "}
-            {FrontEndSkills.map(({ id }) => {
-              return (
-                <motion.div
-                  key={id}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className="slide"
-                ></motion.div>
-              );
-            })}
-          </div>
-          <div className="slider backend reverse ">
-            {BackEndSkills.map(({ id }) => {
-              return (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  key={id}
-                  className="slide "
-                ></motion.div>
-              );
-            })}
-          </div>{" "}
-        </div>
+        <Marquee loop={0} speed={90} gradient={false}>
+          {" "}
+          {FrontEndSkills.map(({ id, img }) => {
+            return (
+              <div key={id} className="slide">
+                <img src={img} alt={img} />
+              </div>
+            );
+          })}
+        </Marquee>
+        <Marquee speed={90} direction={"right"} gradient={false}>
+          {BackEndSkills.map(({ id, img }) => {
+            return (
+              <div key={id} className="slide ">
+                <img src={img} alt={img} />
+              </div>
+            );
+          })}
+        </Marquee>{" "}
       </div>
       <div className="skills-bottom"></div>
     </div>
