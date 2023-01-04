@@ -22,7 +22,7 @@ export default function Skills() {
   ];
 
   return (
-    <div>
+    <div name="skills">
       <div className="skills-top"></div>
 
       <div className="skills-content">
@@ -53,7 +53,7 @@ export default function Skills() {
               stroke-linejoin="round"
             />
           </svg>
-          view all skills on my resume{" "}
+          View all skills on my resume{" "}
         </p>{" "}
         <div className="slider frontend">
           {" "}
@@ -64,9 +64,7 @@ export default function Skills() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 className="slide"
-              >
-                {id}
-              </motion.div>
+              ></motion.div>
             );
           })}
         </div>
@@ -78,9 +76,7 @@ export default function Skills() {
                 animate={{ opacity: 1 }}
                 key={id}
                 className="slide "
-              >
-                {id}
-              </motion.div>
+              ></motion.div>
             );
           })}
         </div>

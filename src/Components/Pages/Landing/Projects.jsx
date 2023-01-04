@@ -43,7 +43,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="projects">
+    <div name="projects" className="portfolio">
       <h2 className="secondary-title">Programming Portfolio</h2>
       <p className="hero-text">
         See what the power of coding I can do! Check out these full-stack
@@ -54,7 +54,7 @@ export default function Projects() {
           ProjectList.map((project) => {
             return (
               <motion.div
-                initial={{ opacity: 0, y: "100vh" }}
+                initial={{ opacity: 0, y: -1 }}
                 transition={{ stiffness: 100, delay: `0.${project.id}` }}
                 animate={{ opacity: 1, y: 0 }}
                 className="project-card"

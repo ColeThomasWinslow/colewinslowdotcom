@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Logo from "./Logo";
 import MobileNavMenu from "./MobileNavMenu";
@@ -7,14 +8,14 @@ import WebNavMenu from "./WebNavMenu";
 export default function NavBar() {
   return (
     <nav>
-      {/* <div className="nav-header ">
+      <div className="nav-header ">
         <div className="nav-header-info max-container">
           <p className="nav-header-text"></p>
           <div className="nav-header-social-cont">
             <SocialElements />
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="nav-link-box max-container">
         <div className="nav-menu-box">
           <Logo />
@@ -25,7 +26,11 @@ export default function NavBar() {
           <div className="nav-header-social-cont">
             <SocialElements />
           </div>
-          <button className="cta-btn">
+          <motion.button
+            whileHover={{ scale: 1.06 }}
+            whileTap={{ scale: 0.95 }}
+            className="cta-btn"
+          >
             Resume{" "}
             <svg
               width="19"
@@ -49,7 +54,7 @@ export default function NavBar() {
                 stroke-linejoin="round"
               />
             </svg>
-          </button>
+          </motion.button>
         </div>
       </div>
     </nav>
