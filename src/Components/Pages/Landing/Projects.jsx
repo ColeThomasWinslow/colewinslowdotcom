@@ -101,8 +101,22 @@ export default function Projects() {
                   return <span className="tech">{elm.title}</span>;
                 })}
               </div>
-              <button className="card-btn">Code Repository</button>
-              <button className="card-btn live">Live Website</button>
+              <a
+                rel="noreferrer"
+                href={project.code}
+                target="_blank"
+                className="card-btn"
+              >
+                Code Repository
+              </a>
+              <a
+                rel="noreferrer"
+                href={project.live}
+                target="_blank"
+                className="card-btn live"
+              >
+                Live Website
+              </a>
             </motion.div>
           );
         })}

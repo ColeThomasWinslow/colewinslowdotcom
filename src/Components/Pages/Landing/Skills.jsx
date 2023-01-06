@@ -26,13 +26,13 @@ export default function Skills() {
       id: 6,
       img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
     },
-    {
-      id: 7,
-      img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-    },
+    { id: 7, img: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" },
   ];
   const BackEndSkills = [
-    { id: 8, img: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" },
+    {
+      id: 8,
+      img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+    },
     {
       id: 9,
       img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
@@ -53,7 +53,10 @@ export default function Skills() {
       id: 13,
       img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
     },
-    { id: 14 },
+    {
+      id: 14,
+      img: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+    },
   ];
 
   return (
@@ -64,7 +67,7 @@ export default function Skills() {
         {" "}
         <h2 className="secondary-title">Developer Skills</h2>
         <p className="skills-para">
-          HTML, CSS, Javascript, Typescript, SQL
+          Primary Skills: HTML, CSS, Javascript, Typescript, SQL
           <br className="nameBreak" />{" "}
           <svg
             width="19"
