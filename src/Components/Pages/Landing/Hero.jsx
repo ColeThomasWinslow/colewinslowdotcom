@@ -19,16 +19,14 @@ function Hero() {
               alt="javascript"
               width="20"
               height="20"
-            />
-            . Take a look at what i've created below and feel free to reach out
-            via LinkedIn or email me at
+            />{" "}
+            Take a look at what i've created below and feel free to reach out
+            via Linkedin or email me at
             <a className="email-link" href="mailto: colewinslow174@gmail.com">
               colewinslow174@gmail.com.
             </a>
-          </p>
-        </div>{" "}
-        <div className="hero-cta-box">
-          <>
+          </p>{" "}
+          <div className="hero-cta-box">
             <motion.a
               target="_blank"
               initial={{ x: "-100vw" }}
@@ -69,10 +67,10 @@ function Hero() {
                   />
                 </g>
               </svg>{" "}
-              Message me on linkedIn
+              Message me on linkedin
             </motion.a>
-          </>
-        </div>
+          </div>
+        </div>{" "}
       </div>
     </div>
   );

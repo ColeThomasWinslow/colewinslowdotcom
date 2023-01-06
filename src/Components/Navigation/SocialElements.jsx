@@ -1,24 +1,41 @@
 import React from "react";
-
+import Youtube from "../../Assets/Youtube.svg";
+import LinkedIn from "../../Assets/LinkedIn.svg";
+import Github from "../../Assets/Github.svg";
+import Chess from "../../Assets/Chess.svg";
+import { motion } from "framer-motion";
 export default function SocialElements() {
-  // const Socials = [
-  //   { id: 1, title: "LinkedIn.com", icon: "", link: "" },
-  //   { id: 2, title: "Github.com", icon: "", link: "" },
-  //   { id: 3, title: "Chess.com", icon: "", link: "" },
-  // ];
+  const Socials = [
+    { id: 4, title: "Chess.com", icon: Chess, link: "" },
+    { id: 1, title: "Youtube.com", icon: Youtube, link: "" },
+    { id: 2, title: "LinkedIn.com", icon: LinkedIn, link: "" },
+    { id: 3, title: "Github.com", icon: Github, link: "" },
+  ];
   return (
     <div className="socials">
-      {/* {Socials.map((social) => {
+      {Socials.map((social) => {
         return (
-          <a className="social-element" href={social.link} target="_blank">
+          <motion.a
+            initial={{ opacity: 0, scale: 0.7 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            whileTap={{ scale: 0.95 }}
+            className="social-element"
+            rel="noreferrer"
+            href={social.link}
+            target="_blank"
+          >
             <img
               className="social-element-icon"
               src={social.icon}
               alt={social.title}
             />
-          </a>
+          </motion.a>
         );
-      })} */}
+      })}
     </div>
   );
 }

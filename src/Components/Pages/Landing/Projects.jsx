@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-
+import Puzzle from "./PuzzelmyImage.svg";
 export default function Projects() {
   const ProjectList = [
     {
@@ -16,28 +16,11 @@ export default function Projects() {
         { title: "Framer.Motion" },
       ],
       coverImg:
-        "https://cdn.dribbble.com/userupload/4047570/file/original-f4c098b972f07f621733deb4e2e4ee13.png?compress=1&resize=1504x1128",
+        "https://cdn.dribbble.com/users/1937255/screenshots/17730757/media/5f1a23f81f104e47fcb06069b2456b21.png?compress=1&resize=1600x1200&vertical=top",
 
       description: "Project Manager and Bug Tracker",
       live: "",
       code: "https://github.com/colewinslow/IssuesManagerPro",
-    },
-    {
-      id: 2,
-      title: "Roles.io",
-      tech: [
-        { title: "React" },
-        { title: "MySQL" },
-        { title: "Sequelize" },
-        { title: "Express" },
-        { title: "Node" },
-        { title: "TailwindCSS" },
-      ],
-      coverImg:
-        "https://cdn.dribbble.com/users/1937255/screenshots/17730757/media/5f1a23f81f104e47fcb06069b2456b21.png?compress=1&resize=1600x1200&vertical=top",
-      description: "Management System for Roles",
-      live: "",
-      code: "https://github.com/colewinslow/Roles.io",
     },
     {
       id: 3,
@@ -49,8 +32,7 @@ export default function Projects() {
         { title: "Stripe" },
         { title: "Google Firebase" },
       ],
-      coverImg:
-        "https://cdn.dribbble.com/userupload/3279154/file/original-d95ded83b926de6bd359ec2d12d13ec7.png?compress=1&resize=1504x1128",
+      coverImg: Puzzle,
       description: "Puzzle Creation and Shop",
       live: "",
       code: "https://github.com/colewinslow/PuzzleMyImage",
@@ -71,13 +53,31 @@ export default function Projects() {
       live: "",
       code: "https://github.com/colewinslow/TalkzMessenger",
     },
+    {
+      id: 2,
+      title: "Roles.io",
+      tech: [
+        { title: "React" },
+        { title: "MySQL" },
+        { title: "Sequelize" },
+        { title: "Express" },
+        { title: "Node" },
+        { title: "TailwindCSS" },
+      ],
+      coverImg:
+        "https://cdn.dribbble.com/userupload/4047570/file/original-f4c098b972f07f621733deb4e2e4ee13.png?compress=1&resize=1504x1128",
+
+      description: "Management System for Roles",
+      live: "",
+      code: "https://github.com/colewinslow/Roles.io",
+    },
   ];
   return (
     <div name="projects" className="portfolio">
       <h2 className="secondary-title">Programming Portfolio</h2>
       <p className="hero-text">
-        See what the power of coding I can do! Check out these full-stack
-        applications I've created below.
+        See what the power of coding I can do! Check out these <br />
+        full-stack applications I've created below.
       </p>
       <div className="project-container">
         {ProjectList.map((project) => {

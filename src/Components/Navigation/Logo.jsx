@@ -1,8 +1,15 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 export default function Logo() {
   return (
-    <a className="Logo" href="/">
+    <motion.a
+      transition={{ type: "spring" }}
+      initial={{ opacity: 0, x: "-8vh" }}
+      animate={{ opacity: 1, x: 0 }}
+      className="Logo"
+      href="/"
+    >
       <svg
         width="49"
         height="23"
@@ -19,6 +26,6 @@ export default function Logo() {
           fill="#24335a"
         ></path>
       </svg>
-    </a>
+    </motion.a>
   );
 }

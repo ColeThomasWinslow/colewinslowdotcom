@@ -26,7 +26,7 @@ export default function About() {
                 alt="Cole winslow"
               />
             </div>
-          </motion.div>
+          </motion.div>{" "}
         </>
       )}
     </div>

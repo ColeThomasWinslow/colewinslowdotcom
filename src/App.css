@@ -28,11 +28,19 @@ nav {
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
-  padding-top: 100px;
-  padding-bottom: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   position: relative;
-}
 
+  width: 100%;
+  min-height: 95vh;
+}
+.or {
+  font-weight: bold;
+  color: #d4d4d4;
+}
 .hero-body {
   display: flex;
   flex-direction: column;
@@ -51,7 +59,7 @@ nav {
   transition: all 0.3s;
   margin-top: -20px;
   text-align: center;
-  font-size: 62px;
+  font-size: 65px;
 }
 .hero-title span {
   color: #a9caf8;
@@ -62,10 +70,11 @@ nav {
   margin-left: 12px;
 }
 .hero-text {
-  width: 65%;
-  max-width: 650px;
+  width: 80%;
+  max-width: 750px;
   margin: auto;
   margin-top: 30px;
+  margin-bottom: 30px;
   font-weight: 500;
   text-align: center;
   color: #868ea3;
@@ -119,7 +128,7 @@ nav {
 .hero-cta-box {
   display: flex;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 5px;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -199,6 +208,7 @@ nav {
 .card-btn {
   border: none;
   text-decoration: none;
+  display: flex;
   -webkit-box-align: center;
   align-items: center;
   background-color: white;
@@ -207,10 +217,11 @@ nav {
   border: 2px solid #c8dfff99;
   color: #24335a;
   display: flex;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 20px;
-  font-size: 14px;
-  padding: 12px 24px 12px 16px;
+  justify-content: center;
+  font-size: 12px;
+  padding: 12px 14px 12px 16px;
   transition: all 0.3s ease 0s;
 }
 .card-btn:hover {
@@ -240,18 +251,19 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 160px;
+  height: 150px;
+
   margin-bottom: 14px;
 }
 .project-img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   transition: all 0.3s;
   border-radius: 4px;
   box-shadow: rgb(11 43 158 / 15%) 0px 6px 20px -6px;
 
-  margin-top: -55px;
+  margin-top: -75px;
   background: whitesmoke;
 }
 .nav-header-info {
@@ -279,35 +291,49 @@ nav {
 
   color: #24335a;
 }
-.nav-header-social-cont {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-  align-items: center;
-}
+
 .socials {
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 40%;
+  width: 50%;
+  height: 22px;
+  margin-left: 20px;
+}
+.web-socials {
+  width: 90%;
+  display: flex;
+  margin-right: 20px;
+  justify-content: flex-end;
 }
 .social-element {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  background: white;
+  box-shadow: #0b2b9e26 0px 3px 10px -6px;
+  border: 2px solid #e3e8f4;
+  border-radius: 8px;
+  width: 38px;
+  height: 38px;
+  transition: all 0.3s;
+}
+.social-element:hover {
+  opacity: 90%;
+  border-radius: 50%;
 }
 
 .social-element-icon {
-  width: 90%;
-  height: 90%;
+  width: 50%;
+  transition: all 0.3s;
+  height: 50%;
 }
 .nav-link-box {
   display: flex;
   align-items: center;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 14px;
   padding-bottom: 14px;
 }
 .web-nav-menu {
@@ -315,6 +341,7 @@ nav {
   display: flex;
   margin-left: 30px;
   padding-left: 10px;
+
   width: 100%;
   height: 20px;
   align-items: center;
@@ -327,7 +354,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65px;
+
   width: 65px;
 
   margin-left: 60px;
@@ -395,8 +422,11 @@ nav {
   width: 45%;
 }
 .nav-cta-cont {
+  position: relative;
   display: flex;
+  align-items: center;
   width: 50%;
+
   justify-content: flex-end;
 }
 .JS-icon {
@@ -414,7 +444,7 @@ nav {
   border-radius: 8px;
   cursor: pointer;
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   -webkit-box-pack: center;
   justify-content: center;
   border: none;
@@ -469,17 +499,17 @@ nav {
   color: rgb(8, 27, 75);
   display: flex;
   font-weight: 600;
-  margin: 20px;
+  margin: 25px;
   width: 95vw;
-  min-height: 450px;
-  max-width: 270px;
+  min-height: 420px;
+  max-width: 260px;
   padding: 12px;
 }
 
 .project-text {
   margin: 0px;
-  margin-top: -20px;
-  margin-bottom: 10px;
+  margin-top: -30px;
+  margin-bottom: 20px;
   padding: 15px;
   width: 90%;
   /* background: white; */
@@ -531,16 +561,8 @@ nav {
 .skills-para svg path {
   stroke-width: 2.8px;
 }
-@keyframes Marquee {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(calc(-1492px));
-  }
-}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .mobile-nav-menu {
     display: inherit;
   }
@@ -568,6 +590,17 @@ nav {
     justify-content: center;
     align-items: center;
   }
+  .nav-cta-cont {
+    width: 95%;
+  }
+  .socials {
+    width: 100%;
+  }
+  .social-element {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+  }
   .about-content {
     max-width: 70%;
     text-align: center;
@@ -587,7 +620,8 @@ nav {
     font-size: 14px;
   }
   .cta-btn {
-    padding: 8px;
+    padding: 9px;
+    margin-right: 14px;
     font-size: 12px;
   }
 }
