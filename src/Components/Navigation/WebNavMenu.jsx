@@ -17,7 +17,7 @@ export default function WebNavMenu() {
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-135}
+            offset={-85}
             duration={400}
             className="nav-element"
             to={elm.link}

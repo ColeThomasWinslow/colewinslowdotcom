@@ -7,7 +7,7 @@ function Hero() {
         <h1 className="hero-title">
           Hi, I'm <span>Cole Winslow</span>
           <br />
-          Welcome to my Website! <br />
+          Welcome to my Website!
         </h1>
         <div>
           <p className="hero-text">

@@ -1,6 +1,6 @@
 :root {
   --Main: #24335a;
-  --Secondary: #dbeafe;
+  --Secondary: #e2efff;
   --Tertiary: #7aa1e3;
 }
 body {
@@ -38,7 +38,7 @@ nav {
   align-content: center;
   position: relative;
   width: 100%;
-  min-height: 95vh;
+  min-height: 100vh;
 }
 .hero-body {
   display: flex;
@@ -58,15 +58,14 @@ nav {
   transition: all 0.3s;
   margin-top: -20px;
   text-align: center;
-  font-size: 70px;
+  font-size: 64px;
 }
 .hero-title span {
   color: #a9caf8;
   font-weight: 800;
-  background: -webkit-linear-gradient(95deg, #6ba1ed, var(--Tertiary));
+  background: -webkit-linear-gradient(15deg, #6ba1ed, var(--Tertiary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 12px;
 }
 .hero-text {
   width: 80%;
@@ -220,6 +219,7 @@ nav {
   margin-top: 20px;
   justify-content: center;
   font-size: 12px;
+  width: 80%;
   padding: 12px 14px 12px 16px;
   transition: all 0.3s ease 0s;
 }
@@ -250,19 +250,18 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 170px;
-
-  margin-bottom: 14px;
+  height: 150px;
+  width: 90%;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .project-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.3s;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: #030d3234 0px 6px 20px -6px;
-  /* border: 2px solid #e3e8f4; */
-  margin-top: -105px;
   background: whitesmoke;
 }
 .max-container {
@@ -343,27 +342,25 @@ nav {
   margin-left: 60px;
 }
 .skills-top {
-  background-color: rgb(249, 250, 254);
   background-image: url(wave-top.svg);
   display: flex;
   background-blend-mode: multiply;
   height: 64px;
   overflow: hidden;
   width: 100%;
-  margin-top: 50px;
 }
 .nameBreak {
   display: none;
 }
 .skills-content {
-  background: var(--Secondary);
+  background-color: var(--Secondary);
   width: 100%;
-
+  padding-bottom: 40px;
   overflow: hidden;
 }
 .skills-bottom {
   background-blend-mode: multiply;
-  background-color: rgb(249, 250, 254);
+
   background-image: url(wave-bottom.svg);
   display: flex;
   height: 64px;
@@ -471,14 +468,23 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 30px;
-  margin-top: 20px;
-  min-height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.project-card-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95vw;
+  max-width: 315px;
+  margin: 5px;
+  padding: 10px;
 }
 .project-card {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  border: 2px solid #e3e8f4;
   text-decoration: none;
   -webkit-box-align: center;
   background-color: #ffffff;
@@ -487,16 +493,14 @@ nav {
   color: rgb(8, 27, 75);
   display: flex;
   font-weight: 600;
-  margin: 25px;
-  width: 95vw;
-  min-height: 420px;
-  max-width: 260px;
-  padding: 12px;
+  width: 90%;
+  padding: 10px;
+  padding-bottom: 20px;
 }
 
 .project-text {
   margin: 0px;
-  margin-top: -45px;
+  margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
   padding-top: 15px;
@@ -507,6 +511,7 @@ nav {
   /* border: 2px solid #e3e8f4; */
   font-size: 15px;
 }
+
 .slider-cont {
   display: flex;
   width: 100%;

@@ -77,7 +77,7 @@ export default function Projects() {
   return (
     <div name="projects" className="portfolio">
       <h2 className="secondary-title">Programming Portfolio</h2>
-      <p className="hero-text">
+      <p className="portfolio-text">
         See what the power of coding I can do! Check out these <br />
         full-stack applications I've created below.
       </p>
@@ -88,37 +88,39 @@ export default function Projects() {
               initial={{ opacity: 0, y: -1 }}
               transition={{ stiffness: 100, delay: `0.${project.id}` }}
               animate={{ opacity: 1, y: 0 }}
-              className="project-card"
+              className="project-card-cont"
             >
-              <div className="img-cont">
-                <img
-                  src={project.coverImg}
-                  className="project-img"
-                  alt={project.title}
-                />
+              <div className="project-card">
+                <div className="img-cont">
+                  <img
+                    src={project.coverImg}
+                    className="project-img"
+                    alt={project.title}
+                  />
+                </div>
+                <p className="project-text">{project.description}</p>{" "}
+                <div className="tech-cont">
+                  {project.tech.map((elm) => {
+                    return <span className="tech">{elm.title}</span>;
+                  })}
+                </div>
+                <a
+                  rel="noreferrer"
+                  href={project.code}
+                  target="_blank"
+                  className="card-btn"
+                >
+                  Code Repository
+                </a>
+                <a
+                  rel="noreferrer"
+                  href={project.live}
+                  target="_blank"
+                  className="card-btn live"
+                >
+                  Live Website
+                </a>
               </div>
-              <p className="project-text">{project.description}</p>{" "}
-              <div className="tech-cont">
-                {project.tech.map((elm) => {
-                  return <span className="tech">{elm.title}</span>;
-                })}
-              </div>
-              <a
-                rel="noreferrer"
-                href={project.code}
-                target="_blank"
-                className="card-btn"
-              >
-                Code Repository
-              </a>
-              <a
-                rel="noreferrer"
-                href={project.live}
-                target="_blank"
-                className="card-btn live"
-              >
-                Live Website
-              </a>
             </motion.div>
           );
         })}
