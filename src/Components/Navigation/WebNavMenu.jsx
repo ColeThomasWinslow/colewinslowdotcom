@@ -3,10 +3,11 @@ import { Link } from "react-scroll";
 
 export default function WebNavMenu() {
   const NavLinks = [
-    { id: 0, title: "Home", icon: "", link: "home" },
-    { id: 1, title: "Skills", icon: "", link: "skills" },
-    { id: 2, title: "Portfolio", icon: "", link: "portfolio" },
-    { id: 2, title: "About", icon: "", link: "about" },
+    { id: 1, title: "Home", icon: "", link: "home" },
+    { id: 2, title: "Skills", icon: "", link: "skills" },
+    { id: 3, title: "Portfolio", icon: "", link: "portfolio" },
+    // { id: 2, title: "Coding ", icon: "", link: "coding" },
+    { id: 4, title: "About", icon: "", link: "about" },
   ];
   return (
     <div className="web-nav-menu">
@@ -20,7 +21,6 @@ export default function WebNavMenu() {
             duration={500}
             className="nav-element"
             to={elm.link}
-            href={elm.link}
           >
             {elm.title}
           </Link>

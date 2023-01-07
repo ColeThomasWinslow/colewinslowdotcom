@@ -9,11 +9,6 @@ export default function NavBar() {
   return (
     <>
       <nav>
-        <div className="nav-header ">
-          <div className="nav-header-info max-container">
-            <p className="nav-header-text"></p>
-          </div>
-        </div>
         <div className="nav-link-box max-container">
           <div className="nav-menu-box">
             <Logo />
