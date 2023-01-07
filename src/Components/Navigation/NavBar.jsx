@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Logo from "./Logo";
-import MobileNavMenu from "./MobileNavMenu";
 import SocialElements from "./SocialElements";
 import WebNavMenu from "./WebNavMenu";
 import Resume from "./ColeWinslowResume.pdf";
@@ -13,7 +12,6 @@ export default function NavBar() {
           <div className="nav-menu-box">
             <Logo />
             <WebNavMenu />
-            <MobileNavMenu />{" "}
           </div>
           <div className="nav-cta-cont">
             <div className="web-socials">

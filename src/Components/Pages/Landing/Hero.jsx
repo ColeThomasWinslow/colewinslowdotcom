@@ -5,7 +5,7 @@ function Hero() {
     <div name="home" className="hero">
       <div className="hero-body">
         <h1 className="hero-title">
-          Hi, I'm Cole Winslow
+          Hi, I'm <span>Cole Winslow</span>
           <br />
           Welcome to my Website! <br />
         </h1>

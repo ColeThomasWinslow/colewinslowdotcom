@@ -4,6 +4,24 @@ import Puzzle from "./PuzzelmyImage.svg";
 export default function Projects() {
   const ProjectList = [
     {
+      id: 2,
+      title: "Roles.io",
+      tech: [
+        { title: "React" },
+        { title: "MySQL" },
+        { title: "Sequelize" },
+        { title: "Express" },
+        { title: "Node" },
+        { title: "TailwindCSS" },
+      ],
+      coverImg:
+        "https://cdn.dribbble.com/userupload/4047570/file/original-f4c098b972f07f621733deb4e2e4ee13.png?compress=1&resize=1504x1128",
+
+      description: "Management System for Roles",
+      live: "",
+      code: "https://github.com/colewinslow/Roles.io",
+    },
+    {
       id: 1,
       title: "IssuesMangerPro",
       tech: [
@@ -18,10 +36,11 @@ export default function Projects() {
       coverImg:
         "https://cdn.dribbble.com/users/1937255/screenshots/17730757/media/5f1a23f81f104e47fcb06069b2456b21.png?compress=1&resize=1600x1200&vertical=top",
 
-      description: "Project Manager and Bug Tracker",
+      description: "Issue and Bug Tracker",
       live: "",
       code: "https://github.com/colewinslow/IssuesManagerPro",
     },
+
     {
       id: 3,
       title: "PuzzleMyImage",
@@ -32,7 +51,8 @@ export default function Projects() {
         { title: "Stripe" },
         { title: "Google Firebase" },
       ],
-      coverImg: Puzzle,
+      coverImg:
+        "https://cdn.dribbble.com/userupload/4157352/file/original-a58756522375e6108d370f4fcaeb60e0.jpg?compress=1&resize=2048x1536",
       description: "Puzzle Creation and Shop",
       live: "",
       code: "https://github.com/colewinslow/PuzzleMyImage",
@@ -52,24 +72,6 @@ export default function Projects() {
       description: "Chat Application",
       live: "",
       code: "https://github.com/colewinslow/TalkzMessenger",
-    },
-    {
-      id: 2,
-      title: "Roles.io",
-      tech: [
-        { title: "React" },
-        { title: "MySQL" },
-        { title: "Sequelize" },
-        { title: "Express" },
-        { title: "Node" },
-        { title: "TailwindCSS" },
-      ],
-      coverImg:
-        "https://cdn.dribbble.com/userupload/4047570/file/original-f4c098b972f07f621733deb4e2e4ee13.png?compress=1&resize=1504x1128",
-
-      description: "Management System for Roles",
-      live: "",
-      code: "https://github.com/colewinslow/Roles.io",
     },
   ];
   return (
