@@ -566,6 +566,11 @@ nav {
   .web-nav-menu {
     display: none;
   }
+  .nav-menu-box {
+    display: flex;
+    width: 5%;
+    margin-right: 20px;
+  }
   .hero-title {
     font-size: 35px;
     width: 95%;
@@ -590,9 +595,9 @@ nav {
   .socials {
     width: 100%;
   }
-  .web-socials {
+  /* .web-socials {
     display: none;
-  }
+  } */
   .social-element {
     width: 35px;
     height: 35px;
@@ -617,11 +622,18 @@ nav {
     font-size: 14px;
   }
   .project-card {
-    margin: 40px;
+    margin: 4px;
   }
   .cta-btn {
     padding: 9px;
 
     font-size: 12px;
+  }
+  .nav-cta-cont {
+    width: 80%;
+
+    margin: 0px;
+    margin-left: 50px;
+    margin-right: 100px;
   }
 }
