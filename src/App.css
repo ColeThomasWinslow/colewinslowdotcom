@@ -316,6 +316,7 @@ nav {
 }
 .nav-link-box {
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   padding-top: 14px;
@@ -362,15 +363,13 @@ nav {
   overflow: hidden;
 }
 .skills-bottom {
-  background-blend-mode: multiply;
-
   background-image: url(wave-bottom.svg);
   display: flex;
+  background-blend-mode: multiply;
   height: 64px;
+
   overflow: hidden;
   width: 100%;
-
-  margin-bottom: 60px;
 }
 .nav-element {
   display: flex;
@@ -566,6 +565,9 @@ nav {
   .web-nav-menu {
     display: none;
   }
+  .nav-link-box {
+    width: 100%;
+  }
   .nav-menu-box {
     display: flex;
     width: 5%;
@@ -595,9 +597,9 @@ nav {
   .socials {
     width: 100%;
   }
-  /* .web-socials {
-    display: none;
-  } */
+  .web-socials {
+    width: 50%;
+  }
   .social-element {
     width: 35px;
     height: 35px;
@@ -629,11 +631,22 @@ nav {
 
     font-size: 12px;
   }
+  .slide {
+    width: 80px;
+    height: 80px;
+  }
+  .slide img {
+    width: 50px;
+  }
+  .Logo {
+    margin: 0px;
+    margin-left: 25px;
+  }
+  .web-socials {
+    width: 80%;
+  }
   .nav-cta-cont {
     width: 80%;
-
     margin: 0px;
-    margin-left: 50px;
-    margin-right: 100px;
   }
 }
