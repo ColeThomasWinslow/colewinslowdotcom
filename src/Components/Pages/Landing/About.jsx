@@ -9,14 +9,6 @@ export default function About() {
       {isInView && (
         <>
           {" "}
-          <motion.div className="about-section about-content">
-            <div className="about-img-cont">
-              <img
-                src="https://images.unsplash.com/photo-1531771686035-25f47595c87a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-                alt="Cole winslow"
-              />
-            </div>
-          </motion.div>{" "}
           <motion.div className="about-section">
             <h2 className="secondary-title">A Little More About Me</h2>
             <p className="about-text">
@@ -26,6 +18,14 @@ export default function About() {
               grow my network, so even if you don't need my help as a programmer
               feel free to reach out to start up a conversation!
             </p>
+          </motion.div>{" "}
+          <motion.div className="about-section about-content">
+            <div className="about-img-cont">
+              <img
+                src="https://images.unsplash.com/photo-1531771686035-25f47595c87a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                alt="Cole winslow"
+              />
+            </div>
           </motion.div>{" "}
         </>
       )}

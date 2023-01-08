@@ -61,7 +61,7 @@ export default function Skills() {
 
   return (
     <div name="skills">
-      <div className="skills-top"></div>
+      <div className="skills-top slanted-div"></div>
 
       <div className="skills-content">
         {" "}
@@ -113,7 +113,7 @@ export default function Skills() {
           })}
         </Marquee>{" "}
       </div>
-      <div className="skills-bottom"></div>
+      <div className="skills-bottom "></div>
     </div>
   );
 }
