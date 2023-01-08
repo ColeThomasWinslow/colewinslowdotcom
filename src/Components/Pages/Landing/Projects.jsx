@@ -77,7 +77,7 @@ export default function Projects() {
   return (
     <div name="projects" className="portfolio">
       <h2 className="secondary-title">Programming Portfolio</h2>
-      <p className="portfolio-text">
+      <p className="hero-text">
         See what the power of coding I can do! Check out these <br />
         full-stack applications I've created below.
       </p>
