@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Puzzle from "./PuzzelmyImage.svg";
 export default function Projects() {
   const ProjectList = [
     {
@@ -22,7 +21,39 @@ export default function Projects() {
       code: "https://github.com/colewinslow/Roles.io",
     },
     {
-      id: 1,
+      id: 2,
+      title: "Talkz Messenger",
+      tech: [
+        { title: "React" },
+        { title: "TypeScript" },
+        { title: "graphQL" },
+        { title: "Redux" },
+        { title: "Web Sockets" },
+      ],
+      coverImg:
+        "https://cdn.dribbble.com/users/393931/screenshots/17594585/media/afb517c99764e5c75b2b125526a21ef6.png?compress=1&resize=1600x1200&vertical=top",
+      description: "Chat Application",
+      live: "",
+      code: "https://github.com/colewinslow/TalkzMessenger",
+    },
+    {
+      id: 4,
+      title: "PuzzleMyImage",
+      tech: [
+        { title: "React" },
+        { title: "Img Uploads" },
+        { title: "Algorithm Design" },
+        { title: "Stripe" },
+        { title: "Google Firebase" },
+      ],
+      coverImg:
+        "https://cdn.dribbble.com/userupload/4157352/file/original-a58756522375e6108d370f4fcaeb60e0.jpg?compress=1&resize=2048x1536",
+      description: "Puzzle Creation and Shop",
+      live: "",
+      code: "https://github.com/colewinslow/PuzzleMyImage",
+    },
+    {
+      id: 3,
       title: "IssuesMangerPro",
       tech: [
         { title: "React" },
@@ -39,39 +70,6 @@ export default function Projects() {
       description: "Computers & Programming",
       live: "",
       code: "https://github.com/colewinslow/IssuesManagerPro",
-    },
-
-    {
-      id: 3,
-      title: "PuzzleMyImage",
-      tech: [
-        { title: "React" },
-        { title: "Img Uploads" },
-        { title: "Algorithm Design" },
-        { title: "Stripe" },
-        { title: "Google Firebase" },
-      ],
-      coverImg:
-        "https://cdn.dribbble.com/userupload/4157352/file/original-a58756522375e6108d370f4fcaeb60e0.jpg?compress=1&resize=2048x1536",
-      description: "Puzzle Creation and Shop",
-      live: "",
-      code: "https://github.com/colewinslow/PuzzleMyImage",
-    },
-    {
-      id: 4,
-      title: "Talkz Messenger",
-      tech: [
-        { title: "React" },
-        { title: "TypeScript" },
-        { title: "graphQL" },
-        { title: "Redux" },
-        { title: "Web Sockets" },
-      ],
-      coverImg:
-        "https://cdn.dribbble.com/users/393931/screenshots/17594585/media/afb517c99764e5c75b2b125526a21ef6.png?compress=1&resize=1600x1200&vertical=top",
-      description: "Chat Application",
-      live: "",
-      code: "https://github.com/colewinslow/TalkzMessenger",
     },
   ];
   return (

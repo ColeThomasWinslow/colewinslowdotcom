@@ -87,19 +87,15 @@ nav {
   color: rgb(8, 27, 75);
   text-decoration: none;
   -webkit-box-align: center;
-  border: 2px solid #e3e8f4;
-  box-shadow: rgb(11 43 158 / 15%) 0px 6px 20px -6px;
-  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   color: rgb(8, 27, 75);
   align-items: center;
   font-weight: 600;
   margin: 20px;
-  width: 50%;
+  width: 55%;
   min-height: 350px;
   justify-content: center;
-  max-width: 450px;
-  padding: 14px;
+  max-width: 550px;
 }
 .about-img-cont {
   display: flex;
@@ -107,7 +103,7 @@ nav {
   align-items: center;
   width: 100%;
 
-  height: 400px;
+  height: 500px;
 }
 .about-img-cont img {
   width: 100%;
@@ -139,9 +135,8 @@ nav {
   max-width: 780px;
 }
 .email-link {
-  margin-left: 8px;
-  font-size: 16px;
-  font-weight: 600;
+  margin-left: 7px;
+
   color: inherit;
 }
 .nav-header {
@@ -254,12 +249,12 @@ nav {
   font-size: 12px;
   width: 80%;
   padding: 12px 14px 12px 16px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s;
 }
 .card-btn svg {
   width: 20px;
   margin-right: 10px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s;
 
   height: 20px;
 }
@@ -294,9 +289,9 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  width: 90%;
-  margin-top: 8px;
+  height: 130px;
+  width: 100%;
+
   margin-bottom: 8px;
 }
 .project-img {
@@ -410,15 +405,17 @@ nav {
   background-color: var(--Secondary);
   width: 100%;
   padding-top: 50px;
+  height: 500px;
+  z-index: 5;
   padding-bottom: 50px;
   overflow: hidden;
 }
 .skills-bottom {
   background-image: url(wave-bottom.svg);
   display: flex;
-  background-blend-mode: multiply;
+  background-blend-mode: color;
   height: 64px;
-
+  z-index: 0;
   overflow: hidden;
   width: 100%;
 }
@@ -582,9 +579,9 @@ nav {
 }
 .slide {
   background: white;
-  height: 100px;
+  height: 110px;
   border-radius: 5px;
-  width: 100px;
+  width: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -594,7 +591,7 @@ nav {
 }
 
 .slide img {
-  width: 60px;
+  width: 80px;
 }
 .skills-para {
   text-align: center;
@@ -617,7 +614,7 @@ nav {
 }
 footer {
   box-shadow: 2px 2px 10px #00000020;
-
+  text-align: center;
   background: white;
   padding-top: 30px;
   padding-bottom: 30px;

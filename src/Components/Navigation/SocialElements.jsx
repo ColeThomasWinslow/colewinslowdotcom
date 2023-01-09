@@ -6,8 +6,7 @@ import Chess from "../../Assets/Chess.svg";
 import { motion } from "framer-motion";
 export default function SocialElements() {
   const Socials = [
-    { id: 4, title: "Chess.com", icon: Chess, link: "" },
-    { id: 1, title: "Youtube.com", icon: Youtube, link: "" },
+    { id: 1, title: "Chess.com", icon: Chess, link: "" },
     { id: 2, title: "LinkedIn.com", icon: LinkedIn, link: "" },
     { id: 3, title: "Github.com", icon: Github, link: "" },
   ];
