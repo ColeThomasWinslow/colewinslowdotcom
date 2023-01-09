@@ -17,7 +17,7 @@ export default function Projects() {
       coverImg:
         "https://cdn.dribbble.com/userupload/4047570/file/original-f4c098b972f07f621733deb4e2e4ee13.png?compress=1&resize=1504x1128",
 
-      description: "Management System for Roles",
+      description: "Project Management tool",
       live: "",
       code: "https://github.com/colewinslow/Roles.io",
     },
@@ -36,7 +36,7 @@ export default function Projects() {
       coverImg:
         "https://cdn.dribbble.com/users/1937255/screenshots/17730757/media/5f1a23f81f104e47fcb06069b2456b21.png?compress=1&resize=1600x1200&vertical=top",
 
-      description: "Issue and Bug Tracker",
+      description: "Computers & Programming",
       live: "",
       code: "https://github.com/colewinslow/IssuesManagerPro",
     },
@@ -103,22 +103,73 @@ export default function Projects() {
                   {project.tech.map((elm) => {
                     return <span className="tech">{elm.title}</span>;
                   })}
-                </div>
-                <a
-                  rel="noreferrer"
-                  href={project.code}
-                  target="_blank"
-                  className="card-btn"
-                >
-                  Code Repository
-                </a>
+                </div>{" "}
                 <a
                   rel="noreferrer"
                   href={project.live}
                   target="_blank"
                   className="card-btn live"
                 >
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.604 22.2601C18.1269 22.2601 22.604 17.783 22.604 12.2601C22.604 6.7373 18.1269 2.26015 12.604 2.26015C7.08116 2.26015 2.604 6.7373 2.604 12.2601C2.604 17.783 7.08116 22.2601 12.604 22.2601Z"
+                      stroke="#24335a"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.604 12.2601H22.604"
+                      stroke="#24335a"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.604 2.26015C15.1053 4.9985 16.5268 8.55218 16.604 12.2601C16.5268 15.9681 15.1053 19.5218 12.604 22.2601C10.1027 19.5218 8.68125 15.9681 8.604 12.2601C8.68125 8.55218 10.1027 4.9985 12.604 2.26015V2.26015Z"
+                      stroke="#24335a"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                   Live Website
+                </a>
+                <a
+                  rel="noreferrer"
+                  href={project.code}
+                  target="_blank"
+                  className="card-btn"
+                >
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.9141 18.766L22.9141 12.766L16.9141 6.76601"
+                      stroke="#24335a"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.91406 6.76601L2.91406 12.766L8.91406 18.766"
+                      stroke="#24335a"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Code Repository
                 </a>
               </div>
             </motion.div>

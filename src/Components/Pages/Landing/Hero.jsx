@@ -29,24 +29,7 @@ function Hero() {
           <div className="hero-cta-box">
             <motion.a
               target="_blank"
-              initial={{ x: "-100vw" }}
-              transition={{ stiffness: 500, ease: "linear" }}
-              animate={{ x: 1 }}
-              exit={{ x: "-100vw" }}
-              href="https://github.com/colewinslow"
-              className="hero-btn"
-            >
-              <img
-                data-src="https://doimages.nyc3.digitaloceanspaces.com/github-logo.svg"
-                src="https://doimages.nyc3.digitaloceanspaces.com/github-logo.svg"
-                alt="GitHub Icon"
-                class="hero-btn-icon"
-              ></img>{" "}
-              View my Github
-            </motion.a>
-            <motion.a
-              target="_blank"
-              initial={{ opacity: 0, x: "100vw" }}
+              initial={{ opacity: 0, x: "-100vw" }}
               transition={{ stiffness: 500, ease: "linear" }}
               animate={{ x: 1, opacity: 1 }}
               href="https://www.linkedin.com/in/cole-winslow/"
@@ -67,7 +50,24 @@ function Hero() {
                   />
                 </g>
               </svg>{" "}
-              Message me on linkedin
+              Message me on Linkedin
+            </motion.a>{" "}
+            <motion.a
+              target="_blank"
+              initial={{ x: "100vw" }}
+              transition={{ stiffness: 500, ease: "linear" }}
+              animate={{ x: 1 }}
+              exit={{ x: "-100vw" }}
+              href="https://github.com/colewinslow"
+              className="hero-btn"
+            >
+              <img
+                data-src="https://doimages.nyc3.digitaloceanspaces.com/github-logo.svg"
+                src="https://doimages.nyc3.digitaloceanspaces.com/github-logo.svg"
+                alt="GitHub Icon"
+                class="hero-btn-icon"
+              ></img>{" "}
+              View my Github Profile
             </motion.a>
           </div>
         </div>{" "}
