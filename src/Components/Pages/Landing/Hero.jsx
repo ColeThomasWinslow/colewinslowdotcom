@@ -1,13 +1,17 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, MotionConfig } from "framer-motion";
+import Dash from "./Dash.svg";
 function Hero() {
   return (
     <div name="home" className="hero">
       <div className="hero-body">
         <h1 className="hero-title">
-          Hi, I'm <span>Cole Winslow</span>
-          <br />
-          Welcome to my Website!
+          Hi, I'm Cole Winslow
+          <br /> Welcome to my{" "}
+          <span className="Name">
+            {" "}
+            <img src={Dash} /> Website!{" "}
+          </span>
         </h1>
         <div>
           <p className="hero-text">
@@ -52,6 +56,14 @@ function Hero() {
               </svg>{" "}
               Message me on Linkedin
             </motion.a>{" "}
+            <motion.span
+              className="Or"
+              initial={{ opacity: 0 }}
+              transition={{ delay: 1, stiffness: 500, ease: "linear" }}
+              animate={{ opacity: 1 }}
+            >
+              or
+            </motion.span>
             <motion.a
               target="_blank"
               initial={{ x: "100vw" }}

@@ -10,14 +10,14 @@ export default function WebNavMenu() {
     { id: 4, title: "About", icon: "", link: "about" },
   ];
   return (
-    <div className="web-nav-menu">
+    <>
       {NavLinks.map((elm) => {
         return (
           <Link
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-25}
+            offset={-55}
             duration={400}
             className="nav-element"
             to={elm.link}
@@ -26,6 +26,6 @@ export default function WebNavMenu() {
           </Link>
         );
       })}
-    </div>
+    </>
   );
 }

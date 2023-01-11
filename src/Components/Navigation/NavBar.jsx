@@ -1,22 +1,24 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "./Logo";
 import SocialElements from "./SocialElements";
 import WebNavMenu from "./WebNavMenu";
 import Resume from "./ColeWinslowResume.pdf";
 export default function NavBar() {
+  const handleScroll = () => {};
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <nav>
         <div className="nav-link-box max-container">
-          <div className="nav-menu-box">
+          <div className="nav-front">
             <Logo />
             <WebNavMenu />
           </div>
-          <div className="nav-cta-cont">
-            <div className="web-socials">
-              <SocialElements />
-            </div>
+          <div className="nav-back">
+            <SocialElements />{" "}
             <motion.a
               href={Resume}
               target="_blank"

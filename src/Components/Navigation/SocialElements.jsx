@@ -1,5 +1,4 @@
 import React from "react";
-import Youtube from "../../Assets/Youtube.svg";
 import LinkedIn from "../../Assets/LinkedIn.svg";
 import Github from "../../Assets/Github.svg";
 import Chess from "../../Assets/Chess.svg";
@@ -11,7 +10,7 @@ export default function SocialElements() {
     { id: 3, title: "Github.com", icon: Github, link: "" },
   ];
   return (
-    <div className="socials">
+    <>
       {Socials.map((social) => {
         return (
           <motion.a
@@ -35,6 +34,6 @@ export default function SocialElements() {
           </motion.a>
         );
       })}
-    </div>
+    </>
   );
 }
